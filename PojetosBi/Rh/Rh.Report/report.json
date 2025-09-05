@@ -43,6 +43,15 @@
           "x": 10.00,
           "y": 0.00,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"5270b57a23b131903ace\",\"layouts\":[{\"id\":0,\"position\":{\"x\":527.1732522796353,\"y\":280.1215805471125,\"z\":2,\"width\":279.1489361702128,\"height\":280.1215805471125,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.4}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 280.12,
+          "width": 279.15,
+          "x": 527.17,
+          "y": 280.12,
+          "z": 2.00
         }
       ],
       "width": 1280.00
