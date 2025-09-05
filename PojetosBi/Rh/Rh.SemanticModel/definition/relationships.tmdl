@@ -1,15 +1,15 @@
-relationship 6b8bb0ac-e616-435c-9f8b-9f478a1cedb2
+relationship f9a9c43f-80f5-4314-b229-91a4ddf67a42
 	joinOnDateBehavior: datePartOnly
-	fromColumn: BaseFuncionarios.'Data de Nascimento'
-	toColumn: LocalDateTable_e6527754-6f4e-418a-b694-21d040d54664.Date
+	fromColumn: Funcionarios.'Data de Nascimento'
+	toColumn: LocalDateTable_d82d9ee3-1f03-4d3c-a3a3-75e892054d61.Date
 
-relationship d0dd540c-13d8-4f86-b0b8-5d9bfd108ce3
+relationship 2962be26-cd66-4995-ac65-6909c47bf615
 	joinOnDateBehavior: datePartOnly
-	fromColumn: BaseFuncionarios.'Data de Contratacao'
-	toColumn: LocalDateTable_4a1d2719-6a45-43dd-82d9-a5aa2b4bde39.Date
+	fromColumn: Funcionarios.'Data de Contratacao'
+	toColumn: LocalDateTable_33e01b23-2a70-414e-9ae4-27a550f90381.Date
 
-relationship 2929bb4a-f140-47db-8416-259d41b677ac
+relationship 08755333-7908-40ba-a430-01e5236c561b
 	joinOnDateBehavior: datePartOnly
-	fromColumn: BaseFuncionarios.'Data de Demissao'
-	toColumn: LocalDateTable_7b13ebdf-4ad1-4689-80c7-1add65dc301c.Date
+	fromColumn: Funcionarios.'Data de Demissao'
+	toColumn: LocalDateTable_c273d301-d9ea-419d-b96c-74aa8797b966.Date
 

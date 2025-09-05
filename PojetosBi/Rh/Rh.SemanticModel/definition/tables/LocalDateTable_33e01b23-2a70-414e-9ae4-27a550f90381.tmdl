@@ -1,13 +1,13 @@
-table DateTableTemplate_79fa3bb4-8e08-4ffd-aa3c-9a9457482acd
+table LocalDateTable_33e01b23-2a70-414e-9ae4-27a550f90381
 	isHidden
-	isPrivate
-	lineageTag: cbe7a319-9c54-499e-babb-046389db9f19
+	showAsVariationsOnly
+	lineageTag: bc2f04ff-82d0-4cb4-8dc3-36e4df38bc98
 
 	column Date
 		dataType: dateTime
 		isHidden
 		formatString: General Date
-		lineageTag: b5e6a9b8-abd7-40ee-be09-9eaa817165b9
+		lineageTag: ecc9e24f-0562-4b44-b46c-eb384b01ee09
 		dataCategory: PaddedDateTableDates
 		summarizeBy: none
 		isNameInferred
@@ -19,7 +19,7 @@ table DateTableTemplate_79fa3bb4-8e08-4ffd-aa3c-9a9457482acd
 		dataType: int64
 		isHidden
 		formatString: 0
-		lineageTag: 7dbc80fa-04d9-48ef-bfc0-f485abb3ff7f
+		lineageTag: bec7fbb1-a9ce-4dfc-8dc3-25be26d2fcc2
 		dataCategory: Years
 		summarizeBy: none
 
@@ -31,7 +31,7 @@ table DateTableTemplate_79fa3bb4-8e08-4ffd-aa3c-9a9457482acd
 		dataType: int64
 		isHidden
 		formatString: 0
-		lineageTag: 2c579642-e5b6-4866-8599-df304d999103
+		lineageTag: f4859cdc-8c8c-47f7-a925-717f9b1706dc
 		dataCategory: MonthOfYear
 		summarizeBy: none
 
@@ -42,7 +42,7 @@ table DateTableTemplate_79fa3bb4-8e08-4ffd-aa3c-9a9457482acd
 	column Mês = FORMAT([Date], "MMMM")
 		dataType: string
 		isHidden
-		lineageTag: 5fca0b39-17a2-4d2f-bf93-342e8e5aa440
+		lineageTag: 5543e533-dd8b-403a-9505-19a48c363320
 		dataCategory: Months
 		summarizeBy: none
 		sortByColumn: MonthNo
@@ -55,7 +55,7 @@ table DateTableTemplate_79fa3bb4-8e08-4ffd-aa3c-9a9457482acd
 		dataType: int64
 		isHidden
 		formatString: 0
-		lineageTag: 0700e1c3-e4aa-4ff5-9f46-c4ef96e74cb9
+		lineageTag: ec970442-1315-4b04-a62b-ae5c302ddc3c
 		dataCategory: QuarterOfYear
 		summarizeBy: none
 
@@ -66,7 +66,7 @@ table DateTableTemplate_79fa3bb4-8e08-4ffd-aa3c-9a9457482acd
 	column Trimestre = "Qtr " & [QuarterNo]
 		dataType: string
 		isHidden
-		lineageTag: ad992ec5-13a8-48ee-8a90-6e40f92d3bd8
+		lineageTag: 9e0b0b06-be98-4ec6-b36e-d7cbdcc15c62
 		dataCategory: Quarters
 		summarizeBy: none
 		sortByColumn: QuarterNo
@@ -79,7 +79,7 @@ table DateTableTemplate_79fa3bb4-8e08-4ffd-aa3c-9a9457482acd
 		dataType: int64
 		isHidden
 		formatString: 0
-		lineageTag: fe8beb10-3ffc-4485-a09f-287cbf37425f
+		lineageTag: 768a4d05-d157-45eb-938c-d184e27563b3
 		dataCategory: DayOfMonth
 		summarizeBy: none
 
@@ -88,31 +88,29 @@ table DateTableTemplate_79fa3bb4-8e08-4ffd-aa3c-9a9457482acd
 		annotation TemplateId = Day
 
 	hierarchy 'Hierarquia de datas'
-		lineageTag: 1e7827d2-e183-450a-8fea-c134310f9c9b
+		lineageTag: b7310d30-c5ee-46d0-a690-0eca451040df
 
 		level Ano
-			lineageTag: a06021a9-c68a-4c19-a093-85507a9f09c4
+			lineageTag: 095fde5d-c203-4a1d-b1a2-1693a4bd4ec8
 			column: Ano
 
 		level Trimestre
-			lineageTag: c8d8c5cf-db74-4da9-8242-7540a022e60d
+			lineageTag: 64a92c27-782e-404d-aaf2-65be01acb308
 			column: Trimestre
 
 		level Mês
-			lineageTag: 81a97c1c-fb8b-4159-82a2-9d96b69bba84
+			lineageTag: 7723143b-f417-485d-a255-1a17a763c83f
 			column: Mês
 
 		level Dia
-			lineageTag: bcf950f3-1935-4793-b319-3ceb0efc756f
+			lineageTag: 3baed37d-f0c2-44b0-9be4-5a4b8b52c871
 			column: Dia
 
 		annotation TemplateId = DateHierarchy
 
-	partition DateTableTemplate_79fa3bb4-8e08-4ffd-aa3c-9a9457482acd = calculated
+	partition LocalDateTable_33e01b23-2a70-414e-9ae4-27a550f90381 = calculated
 		mode: import
-		source = Calendar(Date(2015,1,1), Date(2015,1,1))
+		source = Calendar(Date(Year(MIN('Funcionarios'[Data de Contratacao])), 1, 1), Date(Year(MAX('Funcionarios'[Data de Contratacao])), 12, 31))
 
-	annotation __PBI_TemplateDateTable = true
-
-	annotation DefaultItem = DateHierarchy
+	annotation __PBI_LocalDateTable = true
 

@@ -1,10 +1,10 @@
-table BaseFuncionarios
-	lineageTag: 0b092bb3-30c8-48e0-936d-a4743efb357b
+table Funcionarios
+	lineageTag: b40a1237-c103-4dfd-bd37-b1c79199abe3
 
 	column 'ID RH'
 		dataType: int64
 		formatString: 0
-		lineageTag: da448ae4-5e12-45fa-ad19-831534974a37
+		lineageTag: 33dd16fb-e93d-480f-954c-91a904f20db4
 		summarizeBy: sum
 		sourceColumn: ID RH
 
@@ -12,7 +12,7 @@ table BaseFuncionarios
 
 	column 'Nome Completo'
 		dataType: string
-		lineageTag: 41f2a69e-5994-47ef-8501-e10e46ea64ad
+		lineageTag: 296e845e-9132-4305-b366-ff846fc8cc18
 		summarizeBy: none
 		sourceColumn: Nome Completo
 
@@ -20,7 +20,7 @@ table BaseFuncionarios
 
 	column 'Estado Civil'
 		dataType: string
-		lineageTag: 5e9a3ad7-1e90-474e-b0e6-961273a9adfe
+		lineageTag: e0bbc916-5a98-4174-9b7c-37067087da4b
 		summarizeBy: none
 		sourceColumn: Estado Civil
 
@@ -28,7 +28,7 @@ table BaseFuncionarios
 
 	column Sexo
 		dataType: string
-		lineageTag: cbb9f843-6445-4d1c-aabc-2cd43b218116
+		lineageTag: 513e9983-f27d-48f7-8cf7-15ef1d03888e
 		summarizeBy: none
 		sourceColumn: Sexo
 
@@ -37,14 +37,14 @@ table BaseFuncionarios
 	column 'Data de Nascimento'
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: 549f0146-424a-44f9-b4d2-31918becd1c9
+		lineageTag: 77b64f8f-5997-4afe-92d3-dac747b02cdd
 		summarizeBy: none
 		sourceColumn: Data de Nascimento
 
 		variation Variation
 			isDefault
-			relationship: 6b8bb0ac-e616-435c-9f8b-9f478a1cedb2
-			defaultHierarchy: LocalDateTable_e6527754-6f4e-418a-b694-21d040d54664.'Hierarquia de datas'
+			relationship: f9a9c43f-80f5-4314-b229-91a4ddf67a42
+			defaultHierarchy: LocalDateTable_d82d9ee3-1f03-4d3c-a3a3-75e892054d61.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -52,7 +52,7 @@ table BaseFuncionarios
 
 	column Endereço
 		dataType: string
-		lineageTag: aff0d5c8-af7e-4dc2-b38e-6362263ce73e
+		lineageTag: 4aa0efb7-4eba-4d8d-b166-95b804d04156
 		summarizeBy: none
 		sourceColumn: Endereço
 
@@ -61,14 +61,14 @@ table BaseFuncionarios
 	column 'Data de Contratacao'
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: 95e3f84f-0ee3-4e17-b7f5-2f8be7a1e572
+		lineageTag: 8fa7b014-6ea8-4d13-bc9a-9f5852355d71
 		summarizeBy: none
 		sourceColumn: Data de Contratacao
 
 		variation Variation
 			isDefault
-			relationship: d0dd540c-13d8-4f86-b0b8-5d9bfd108ce3
-			defaultHierarchy: LocalDateTable_4a1d2719-6a45-43dd-82d9-a5aa2b4bde39.'Hierarquia de datas'
+			relationship: 2962be26-cd66-4995-ac65-6909c47bf615
+			defaultHierarchy: LocalDateTable_33e01b23-2a70-414e-9ae4-27a550f90381.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -77,14 +77,14 @@ table BaseFuncionarios
 	column 'Data de Demissao'
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: e73472a5-744f-45d4-92cd-0d271b00673a
+		lineageTag: f36d2e0e-8ccc-4968-8ee0-a4afbe003da4
 		summarizeBy: none
 		sourceColumn: Data de Demissao
 
 		variation Variation
 			isDefault
-			relationship: 2929bb4a-f140-47db-8416-259d41b677ac
-			defaultHierarchy: LocalDateTable_7b13ebdf-4ad1-4689-80c7-1add65dc301c.'Hierarquia de datas'
+			relationship: 08755333-7908-40ba-a430-01e5236c561b
+			defaultHierarchy: LocalDateTable_c273d301-d9ea-419d-b96c-74aa8797b966.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -93,7 +93,7 @@ table BaseFuncionarios
 	column 'Salario Base'
 		dataType: int64
 		formatString: 0
-		lineageTag: 2ad6dc3f-d323-43eb-a25c-6a92130614e4
+		lineageTag: d54e8250-ed98-4057-a01a-f892d3a96298
 		summarizeBy: sum
 		sourceColumn: Salario Base
 
@@ -101,7 +101,7 @@ table BaseFuncionarios
 
 	column Impostos
 		dataType: double
-		lineageTag: 1ef89196-8c67-48e0-8e37-9bc1660c1ad5
+		lineageTag: 36706979-4bf8-41b0-b9d0-4b10eb3ad980
 		summarizeBy: sum
 		sourceColumn: Impostos
 
@@ -111,7 +111,7 @@ table BaseFuncionarios
 
 	column Beneficios
 		dataType: double
-		lineageTag: d53e8d3c-3c78-4070-9846-70bc10a690d0
+		lineageTag: 2cd83745-49a1-4d90-8974-9ebc923042a4
 		summarizeBy: sum
 		sourceColumn: Beneficios
 
@@ -121,7 +121,7 @@ table BaseFuncionarios
 
 	column VT
 		dataType: double
-		lineageTag: 463bcbde-137a-4d44-855b-306eb68b383a
+		lineageTag: a03f8f9c-3370-4ff6-b877-15c6715ff48f
 		summarizeBy: sum
 		sourceColumn: VT
 
@@ -131,7 +131,7 @@ table BaseFuncionarios
 
 	column VR
 		dataType: double
-		lineageTag: 0798ed3f-5460-43ec-aac3-6e3cd8f67fb5
+		lineageTag: 15ee0170-528b-43e0-ad13-0d4fedfb943b
 		summarizeBy: sum
 		sourceColumn: VR
 
@@ -141,7 +141,7 @@ table BaseFuncionarios
 
 	column Cargo
 		dataType: string
-		lineageTag: e94321e4-173d-48cb-b009-298a54bc8158
+		lineageTag: 43aa4853-7c3a-4a73-9a43-456f00662483
 		summarizeBy: none
 		sourceColumn: Cargo
 
@@ -149,7 +149,7 @@ table BaseFuncionarios
 
 	column Nível
 		dataType: string
-		lineageTag: e18396a9-ff1f-416c-9aa1-6bd2045ae376
+		lineageTag: c7985768-a964-4b69-9a2c-7d72380717e9
 		summarizeBy: none
 		sourceColumn: Nível
 
@@ -157,7 +157,7 @@ table BaseFuncionarios
 
 	column Área
 		dataType: string
-		lineageTag: cd569cd9-ff9d-4b7c-9142-aafe738383bd
+		lineageTag: 3302e3bc-93d8-4c40-942e-3a2a3d44ca06
 		summarizeBy: none
 		sourceColumn: Área
 
@@ -166,7 +166,7 @@ table BaseFuncionarios
 	column 'Ferias Acumuladas'
 		dataType: int64
 		formatString: 0
-		lineageTag: 349ea930-bab5-49b7-b960-a7806e46c482
+		lineageTag: e08ae360-40f2-41e6-80a2-738e1f0f90e6
 		summarizeBy: sum
 		sourceColumn: Ferias Acumuladas
 
@@ -175,7 +175,7 @@ table BaseFuncionarios
 	column 'Horas Extras'
 		dataType: int64
 		formatString: 0
-		lineageTag: d31310aa-f79a-4f45-b7ba-af71a35273c5
+		lineageTag: 85d09b9f-2305-44c4-8b08-3eccc1d2e4bc
 		summarizeBy: sum
 		sourceColumn: Horas Extras
 
@@ -183,7 +183,7 @@ table BaseFuncionarios
 
 	column Imagem
 		dataType: string
-		lineageTag: 474774e9-cb3e-491f-a44f-ec6a17a9f6e6
+		lineageTag: f6ee4151-6bef-4360-8da7-166b53ff15be
 		summarizeBy: none
 		sourceColumn: Imagem
 
@@ -191,7 +191,7 @@ table BaseFuncionarios
 
 	column 'Avaliação do Funcionário'
 		dataType: double
-		lineageTag: 89f69768-0b19-41c6-bd2e-867032448f70
+		lineageTag: 38f4dc0b-b5f6-42c9-8512-f6b387323a7b
 		summarizeBy: sum
 		sourceColumn: Avaliação do Funcionário
 
@@ -202,7 +202,7 @@ table BaseFuncionarios
 	column 'Trabalho em Equipe'
 		dataType: int64
 		formatString: 0
-		lineageTag: 20b7cac2-ecad-4287-b0cb-cb0e93dd0f82
+		lineageTag: 443c9075-b330-4734-b473-b2b18d01ec38
 		summarizeBy: sum
 		sourceColumn: Trabalho em Equipe
 
@@ -211,7 +211,7 @@ table BaseFuncionarios
 	column Liderança
 		dataType: int64
 		formatString: 0
-		lineageTag: a6230314-8e0f-4c9b-bc58-6f93df9e8e49
+		lineageTag: 763a9784-7ebb-4785-96cd-e7127fb0b939
 		summarizeBy: sum
 		sourceColumn: Liderança
 
@@ -220,7 +220,7 @@ table BaseFuncionarios
 	column Comunicação
 		dataType: int64
 		formatString: 0
-		lineageTag: f2c2e686-e84b-4d09-be7e-ad48c78e3e67
+		lineageTag: f6511570-ab75-4340-9a8d-240103778d66
 		summarizeBy: sum
 		sourceColumn: Comunicação
 
@@ -229,7 +229,7 @@ table BaseFuncionarios
 	column Iniciativa
 		dataType: int64
 		formatString: 0
-		lineageTag: 247bbdfa-012d-48da-aeb4-0ddd5c7021d8
+		lineageTag: 71f010df-fc47-4922-a90d-9524a182fd42
 		summarizeBy: sum
 		sourceColumn: Iniciativa
 
@@ -238,19 +238,20 @@ table BaseFuncionarios
 	column Organização
 		dataType: int64
 		formatString: 0
-		lineageTag: 07becff7-44ae-4bcf-8b3e-0f251cbe0f2c
+		lineageTag: 68ba5742-5de8-4abf-8d71-2f6e03dfa16c
 		summarizeBy: sum
 		sourceColumn: Organização
 
 		annotation SummarizationSetBy = Automatic
 
-	partition BaseFuncionarios = m
+	partition Funcionarios = m
 		mode: import
 		source =
 				let
-				    Fonte = Excel.Workbook(File.Contents("C:\Users\flavi\Documents\GitHub\Projetos\ProjetosPowerBi\PojetosBi\Rh\AnaliseRh.xlsx"), null, true),
-				    BaseFuncionarios_Table = Fonte{[Item="BaseFuncionarios",Kind="Table"]}[Data],
-				    #"Tipo Alterado" = Table.TransformColumnTypes(BaseFuncionarios_Table,{{"ID RH", Int64.Type}, {"Nome Completo", type text}, {"Estado Civil", type text}, {"Sexo", type text}, {"Data de Nascimento", type date}, {"Endereço", type text}, {"Data de Contratacao", type date}, {"Data de Demissao", type date}, {"Salario Base", Int64.Type}, {"Impostos", type number}, {"Beneficios", type number}, {"VT", type number}, {"VR", type number}, {"Cargo", type text}, {"Nível", type text}, {"Área", type text}, {"Ferias Acumuladas", Int64.Type}, {"Horas Extras", Int64.Type}, {"Imagem", type text}, {"Avaliação do Funcionário", type number}, {"Trabalho em Equipe", Int64.Type}, {"Liderança", Int64.Type}, {"Comunicação", Int64.Type}, {"Iniciativa", Int64.Type}, {"Organização", Int64.Type}})
+				    Fonte = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/1-xJObKH-lTZfx67Ff8KtNz9RoONeBsqqykz8YqsLgCE/edit?usp=sharing"),
+				    Folha1_Table = Fonte{[name="Folha1",ItemKind="Table"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Folha1_Table, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ID RH", Int64.Type}, {"Nome Completo", type text}, {"Estado Civil", type text}, {"Sexo", type text}, {"Data de Nascimento", type date}, {"Endereço", type text}, {"Data de Contratacao", type date}, {"Data de Demissao", type date}, {"Salario Base", Int64.Type}, {"Impostos", type number}, {"Beneficios", type number}, {"VT", type number}, {"VR", type number}, {"Cargo", type text}, {"Nível", type text}, {"Área", type text}, {"Ferias Acumuladas", Int64.Type}, {"Horas Extras", Int64.Type}, {"Imagem", type text}, {"Avaliação do Funcionário", type number}, {"Trabalho em Equipe", Int64.Type}, {"Liderança", Int64.Type}, {"Comunicação", Int64.Type}, {"Iniciativa", Int64.Type}, {"Organização", Int64.Type}})
 				in
 				    #"Tipo Alterado"
 

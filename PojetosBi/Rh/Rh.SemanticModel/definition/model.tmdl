@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["BaseFuncionarios"]
+annotation PBI_QueryOrder = ["Funcionarios"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -14,11 +14,11 @@ annotation PBIDesktopVersion = 2.146.1254.0 (25.08)+791a7518fadc83da883d79322a26
 
 annotation PBI_ProTooling = ["DevMode"]
 
-ref table BaseFuncionarios
-ref table DateTableTemplate_79fa3bb4-8e08-4ffd-aa3c-9a9457482acd
-ref table LocalDateTable_e6527754-6f4e-418a-b694-21d040d54664
-ref table LocalDateTable_4a1d2719-6a45-43dd-82d9-a5aa2b4bde39
-ref table LocalDateTable_7b13ebdf-4ad1-4689-80c7-1add65dc301c
+ref table Funcionarios
+ref table DateTableTemplate_c826db6e-f056-40bf-899d-2db2ba7d793a
+ref table LocalDateTable_d82d9ee3-1f03-4d3c-a3a3-75e892054d61
+ref table LocalDateTable_33e01b23-2a70-414e-9ae4-27a550f90381
+ref table LocalDateTable_c273d301-d9ea-419d-b96c-74aa8797b966
 
 ref cultureInfo pt-BR
 
