@@ -25,7 +25,17 @@
       "filters": "[]",
       "height": 720.00,
       "name": "3e5ade076209efad1280",
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1f5c820c9c6baaa89a5a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(BaseFuncionarios.Nome Completo)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BaseFuncionarios\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Nome Completo\"}},\"Function\":5},\"Name\":\"Min(BaseFuncionarios.Nome Completo)\",\"NativeReferenceName\":\"Contagem de Nome Completo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Nome Completo\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
       "width": 1280.00
     }
   ]
